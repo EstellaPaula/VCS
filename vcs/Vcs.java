@@ -39,7 +39,6 @@ public final class Vcs implements Visitor {
         this.branches.get(0).getCommmit().add(new Commit("First commit", activeSnapshot));
         this.workBranch = "master";
         command = new ArrayList<String>();
-        //TODO other initialisations
     }
 
     public void setActiveSnapshot(FileSystemSnapshot activeSnapshot) {
@@ -102,7 +101,5 @@ public final class Vcs implements Visitor {
     public void setCommand(ArrayList<String> command) {
         this.command = command;
     }
-
-    //TODO methods through which vcs operations interact with this
 
 }
