@@ -62,7 +62,6 @@ public final class OperationFactory {
             case VCS_INVALID_OPERATION:
                 return new VcsInvalidOperation(type, args);
 
-            // TODO vcs operations
             case STATUS:
                 return new VcsStatus(type, args);
             case BRACH:
